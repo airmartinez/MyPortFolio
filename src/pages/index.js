@@ -1,3 +1,5 @@
+import ProjectCard from "../../components/ProjectCard";
+
 export default function Home() {
   return (
     <>
@@ -39,11 +41,8 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-gray-800 mb-8">My Projects</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Example Project Card */}
-            <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-              <img src="https://via.placeholder.com/400" alt="Project 1" className="w-full h-56 object-cover rounded-md mb-4" />
-              <h3 className="text-2xl font-semibold text-gray-800 mb-2">Project Name</h3>
-              <p className="text-gray-600">Short description of your project.</p>
-            </div>
+            <ProjectCard projectName="Device Management System" projectDescription="For Borrowing and Managing Device." projectImage={`images/default.jpg`}/>
+           <ProjectCard projectName="Change List Item" projectDescription="Used to track Projects." projectImage={`images/default.jpg`}/>
             {/* Add more project cards as needed */}
           </div>
         </div>
